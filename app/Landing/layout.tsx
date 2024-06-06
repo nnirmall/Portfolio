@@ -1,10 +1,6 @@
 import Nav from "../ui/Landing/nav";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div >
     <div className="nav">    
