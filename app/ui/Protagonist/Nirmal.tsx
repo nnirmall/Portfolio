@@ -14,7 +14,7 @@ export default function Nirmal() {
                 <div className='protagonist-img'/>
                 <div className="protagonist-text">
                     <h1 >Full Stack Developer </h1>
-                    <p>Hi, I'm Nirmal Bhandari. Full Stack Developer based in Austin, Texas. Computer Science Graduate</p>
+                    <p>Hi, I am Nirmal Bhandari. Full Stack Developer based in Austin, Texas. Computer Science Graduate</p>
                 </div>
                
             </div>
