@@ -1,13 +1,10 @@
-
-import { lusitana } from '@/app/ui/fonts';
-
+import Nirmal from '../ui/Protagonist/Nirmal';
+import '@/app/ui/Landing/landing.css';
 export default async function Page() {
     
-  return (
-    <main>
-      <h1 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
-        Navigation bar
-      </h1>
-    </main>
+  return (   
+    <section className='protagonist'>
+      <Nirmal/>
+    </section> 
   );
 }
