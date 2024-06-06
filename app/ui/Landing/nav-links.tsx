@@ -1,12 +1,5 @@
 'use client';
-import {
-    UserCircleIcon,
-    CodeBracketSquareIcon,
-    FolderIcon,
-  } from '@heroicons/react/24/outline';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import clsx from 'clsx';
 import '@/app/ui/Landing/nav.css';
 const links = [
     // {name: 'Nirmal', href: '/Landing'},
@@ -18,24 +11,21 @@ const links = [
 
 
 export default function NabLinks() {
-    const pathname = usePathname();
   return (
-    <>
     <ul>
       {links.map((link)=>{
           return(
-            <li>
+            // <li>
               <Link
                   key={link.name}
                   href={link.href}
               >
              {link.name}
               </Link>
-            </li>
+            // </li>
 
           );
       })}
     </ul>
-    </>
   )
 }
