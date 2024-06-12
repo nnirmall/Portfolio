@@ -83,8 +83,7 @@ export default function Nav() {
               <Button
                 variant="text"
                 size="sm"
-                className="hidden lg:inline-block"
-              >
+                className="hidden lg:inline-block"           >
                 <span>Log In</span>
               </Button>
               <Button
