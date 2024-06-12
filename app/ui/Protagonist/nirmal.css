@@ -1,4 +1,4 @@
-.container {
+/* .container {
     margin: 0 auto;
     max-width: 107rem;
     padding: 0 4rem;
@@ -39,12 +39,12 @@
 }
 
 .protagonist-text-img {
-    /* height: 6rem; */
+    
     position: absolute;
-    /* background-image: url(/hand.jpg); */
+    
     right: 13rem;
     top: 8.7rem;
-    /* width: 6rem; */
+    
 }
 
 .protagonist-text  p {
@@ -68,4 +68,4 @@
     position: relative;
     transition: all 1s ease-in-out;
     width: 35rem;
-}
+} */
