@@ -25,6 +25,7 @@ export default function Landing() {
                         src={'/hand.jpg'}
                         height={50}
                         width={25}
+                        alt={'picture of hand'} 
                     />
                     </div>
                 </div>
@@ -34,6 +35,7 @@ export default function Landing() {
                     src={'/asd.png'}
                     height={300}
                     width={300}
+                    alt={'picture of user'} 
                 />
 
                 </div>
