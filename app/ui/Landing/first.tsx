@@ -12,11 +12,21 @@ import '@/app/ui/Landing/landing.css';
 export default function first() {
   return (
     <>
-    <section className='flex '>
+    <section className='flexing'>
         <div className='content'>
-            <h1 className='highlight'> Full stack Developer </h1>
+            <div className='protagonistText'>
+                <h1 > Full stack Developer </h1>
+            </div>
+            <div className='protagonistFigure'>
+                <Image 
+                    src={'/Nirmal.jpg'}
+                        height={1000}
+                        width={300}
+                        // className='protagonistFigure'
+                    
+                />
+            </div>
         </div>
-
     </section>
     <div className='container'>
         {/* <div className='flex justify-center items-center h-[65rem] relative '>

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import NabLinks from "./nav-links"
+import NabLinks from "../nav-links"
 import {
   Navbar,
   MobileNav,

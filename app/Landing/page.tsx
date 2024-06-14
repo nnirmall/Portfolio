@@ -1,22 +1,20 @@
-import Nirmal from '../ui/Protagonist/Nirmal';
+
 import '@/app/ui/Landing/landing.css';
-import { StickyNavbar } from "../ui/Landing/StickyNavbar";
-import Nav from "../ui/Landing/nav";
-import {
-  Navbar,
-  MobileNav,
-  Typography,
-  Button,
-  IconButton,
-  Card,
-} from "@material-tailwind/react";
+import { StickyNavbar } from "../components/StickyNavbar";
+import first from "../components/Landing/first";
+
 export default async function Page() {
     
   return ( 
-    <section className="p-8 bg-gray-900">
+    <main className=' w-screen h-screen'>
+
+    {/* <section className="footing">
      
                     <h1 >Footeerrrr </h1>
                    
-  </section>
+    </section> */}
+    {/* <first/> */}
+  </main>
+  
   );
 }

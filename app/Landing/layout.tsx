@@ -1,6 +1,6 @@
 "use client";
-import { StickyNavbar } from "../ui/Landing/StickyNavbar";
-import Nav from "../ui/Landing/nav";
+import { StickyNavbar } from "../components/StickyNavbar";
+
 import {
   Navbar,
   MobileNav,
@@ -12,9 +12,10 @@ import {
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
-    <div className="-m-6 max-h-[768px] w-[calc(100%+48px)] overflow-scroll">
+    <div className="">
       <StickyNavbar />
     </div>
+    {/* <first/> */}
     <div className="">{children}</div>        
     </>
   );

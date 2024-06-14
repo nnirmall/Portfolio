@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 /* @media only screen and (min-width: 768px){
   .parent:hover .child {
       opacity:1;
@@ -16,3 +17,4 @@
       transform: translateY(-10%);
   }
 } */
+ 
