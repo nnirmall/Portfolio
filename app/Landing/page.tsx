@@ -1,7 +1,5 @@
 
 import '@/app/ui/Landing/landing.css';
-import { StickyNavbar } from "../components/StickyNavbar";
-import first from "../components/Landing/first";
 
 export default async function Page() {
     
