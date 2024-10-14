@@ -1,8 +1,7 @@
-'use client'
-import { JSXElementConstructor, Key, PromiseLikeOfReactNode, ReactElement, ReactNode, ReactPortal, useState } from 'react';
-import Image from 'next/image';
-import { StaticImport } from 'next/dist/shared/lib/get-img-props';
-import { StaticImageData } from 'next/image';
+'use client';
+
+import { useState } from 'react';
+import Image, { StaticImageData } from 'next/image';
 
 interface Project {
   id: string | number;
@@ -17,20 +16,20 @@ interface ProjectShowcaseProps {
   projects: Project[];
 }
 
-const ProjectShowcase: React.FC<ProjectShowcaseProps> = ({ projects })  => {
+const ProjectShowcase: React.FC<ProjectShowcaseProps> = ({ projects }) => {
   const [activeFilter, setActiveFilter] = useState('All');
 
   const filters = ['All', 'Web', 'Design', 'Mobile'];
 
-  const filteredProjects = activeFilter === 'All' 
-    ? projects 
-    : projects.filter((project: { category: string; }) => project.category === activeFilter);
+  const filteredProjects = activeFilter === 'All'
+    ? projects
+    : projects.filter((project) => project.category === activeFilter);
 
   return (
-    <section className=" py-16">
+    <section className="py-16">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8">Recent Projects</h2>
-        
+
         <div className="flex justify-center mb-8">
           {filters.map(filter => (
             <button
@@ -48,12 +47,15 @@ const ProjectShowcase: React.FC<ProjectShowcaseProps> = ({ projects })  => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredProjects.map((project: { id: Key | null | undefined; image: string | StaticImport; title: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | PromiseLikeOfReactNode | null | undefined; description: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | PromiseLikeOfReactNode | null | undefined; category: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | PromiseLikeOfReactNode | null | undefined; link: string | undefined; }) => (
-            <div key={project.id} className="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+          {filteredProjects.map((project) => (
+            <div
+              key={project.id}
+              className="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300"
+            >
               <div className="relative h-48">
                 <Image
                   src={project.image}
-                  alt={'project.title'}
+                  alt={project.title}
                   layout="fill"
                   objectFit="cover"
                 />
