@@ -5,8 +5,10 @@ import React from "react";
 import ProjectShowcase from './project/page';
 import About from './about/page';
 
-export default function Landing() {
-    const projects = [
+export default async function Landing() {
+    async function getProjects() {
+        // Fetch your projects data here
+        return  [
         {
           id: 1,
           title: "Portfolio",
@@ -60,9 +62,10 @@ export default function Landing() {
         
         // Add more project objects here
       ];
-    
-     
+    }
+    const projects = await getProjects();
   return (
+    
     <>
     {/* <div style={{backgroundImage: "url('/back.png')"}} className='container bg-cover bg-center bg-no-repeat mx-auto px-4 py-8 min-h-screen'>
         <div className='flex flex-col mt-5 md:flex-row items-center rounded-lg shadow-lg justify-between  overflow-hidden'>
@@ -134,6 +137,7 @@ export default function Landing() {
            width={300}
             src="/asd.png" 
             alt="Nirmal Bhandari" 
+            
             className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-lg"
           />
         </div>
@@ -165,7 +169,7 @@ export default function Landing() {
     </section>  */}
   
     <div id='project'>
-        <ProjectShowcase projects={projects} />
+        <ProjectShowcase projects={projects} />;
     </div>
     </>
   )
