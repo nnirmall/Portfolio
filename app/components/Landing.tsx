@@ -129,7 +129,9 @@ export default function Landing() {
           </div>
         </div>
         <div className="flex-shrink-0 md:ml-8">
-          <img 
+          <Image
+           height={300}
+           width={300}
             src="/asd.png" 
             alt="Nirmal Bhandari" 
             className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-lg"
