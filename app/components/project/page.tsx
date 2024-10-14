@@ -2,8 +2,22 @@
 import { JSXElementConstructor, Key, PromiseLikeOfReactNode, ReactElement, ReactNode, ReactPortal, useState } from 'react';
 import Image from 'next/image';
 import { StaticImport } from 'next/dist/shared/lib/get-img-props';
+import { StaticImageData } from 'next/image';
 
-const ProjectShowcase = ({ projects} : {projects:any}) => {
+interface Project {
+  id: string | number;
+  image: string | StaticImageData;
+  title: string;
+  description: string;
+  category: string;
+  link: string;
+}
+
+interface ProjectShowcaseProps {
+  projects: Project[];
+}
+
+const ProjectShowcase: React.FC<ProjectShowcaseProps> = ({ projects })  => {
   const [activeFilter, setActiveFilter] = useState('All');
 
   const filters = ['All', 'Web', 'Design', 'Mobile'];
