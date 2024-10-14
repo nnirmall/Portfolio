@@ -5,65 +5,7 @@ import React from "react";
 import ProjectShowcase from './project/page';
 import About from './about/page';
 
-export default async function Landing() {
-    async function getProjects() {
-        // Fetch your projects data here
-        return  [
-        {
-          id: 1,
-          title: "Portfolio",
-          description: "A Personal portfolio website with Next.js ",
-          category: "Design",
-          image: "/Port.png",
-          link: "https://portfolio-nirmals-projects-4c7d83e3.vercel.app/"
-        },
-        {
-            id: 2,
-            title: "E-commerce Platform",
-            description: "A full-stack e-commerce solution with React and Node.js",
-            category: "Web",
-            image: "/Dash.png",
-            link: "https://coral_qui_gon_jinn_light_termite.toddle.site/"
-          },
-          {
-            id: 3,
-            title: "Advanced Automated Attendance System",
-            description: "A full-stack attendance system solution with React and C#,.NET",
-            category: "Web",
-            image: "/A3S.png",
-            link: "https://github.com/nnirmall/Advanced-Automated-Attendance-System-A3S-?tab=readme-ov-file"
-          },
-          {
-            id: 4,
-            title: "Dashboard",
-            description: "A Dashboard website with Next.js ",
-            category: "Design",
-            image: "/dashboard.png",
-            link: "https://nextjs-dashboard-five-blond-21.vercel.app/dashboard"
-          },
-          {
-            id: 5,
-            title: "TheZoo",
-            description: "Simple Android Application that allows users to view images of different animals that can be found in a zoo. Java, Android Studio",
-            category: "Mobile",
-            image: "/zoo.png",
-            link: "https://github.com/nnirmall/TheZoo?tab=readme-ov-file"
-          },
-          {
-            id: 6,
-            title: "Task Organizer",
-            description: "Developed RESTful APIs using Spring Boot, implementing secure JWT authentication and authorization for user management and task operations.",
-            category: "Web",
-            image: "/asd.png",
-            link: "https://github.com/nnirmall/TaskOrganizer"
-          },
-        
-        
-        
-        // Add more project objects here
-      ];
-    }
-    const projects = await getProjects();
+export default function Landing() {
   return (
     
     <>
@@ -169,7 +111,7 @@ export default async function Landing() {
     </section>  */}
   
     <div id='project'>
-        <ProjectShowcase projects={projects} />;
+        <ProjectShowcase/>;
     </div>
     </>
   )
